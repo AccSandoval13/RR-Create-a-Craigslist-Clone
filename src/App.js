@@ -1,14 +1,16 @@
-// Import data
+import React from 'react';
+import { postings } from './postings.js';
+import { PostingsList } from './postings.js';
 
-// Import components
-import './App.css';
 
-function App(){
+function App() {
   return (
     <div>
       <h1>craigslist</h1>
       <div className="App">
-        {/* Your content will go here! */}
+        <div> 
+        <PostingsList postingss={postings} />
+    </div>
       </div>
     </div>
   );
